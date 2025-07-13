@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quickservice</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Icon CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '68726ae1bf484647c1700c90' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+<body>
+  <div class="container">
+    <h1>Quickservice</h1>
+    <hr />
+    <div class="widgets">
+      <a href="https://wa.me/+96103867756" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:quickservices011@gmail.com" target="_blank" title="Gmail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://maps.google.com/?q=Your+Business+Location" target="_blank" title="Google Maps">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
