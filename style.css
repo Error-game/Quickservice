@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a00ff, #a64bff);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 400px;
+  background: white;
+  margin: 0 auto 30px;
+}
+
+.widgets a {
+  margin: 0 50px;
+  color: white;
+  font-size: 2.7rem;
+  transition: transform 0.7s ease;
+  display: inline-block;
+}
+
+.widgets a:hover {
+  transform: translateY(-10px);
+}
