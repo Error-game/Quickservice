@@ -6,6 +6,9 @@
   <title>Quickservice</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+<!-- In your <head> tag -->
+<script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
 </head>
 <body>
   <div class="container">
@@ -30,9 +33,39 @@
         <span>Monday to Friday: 9AM - 5PM</span>
       </div>
     </section>
+    <footer>
+  &copy; 2025 Quickservice. All rights reserved.
+</footer>
   </div>
-
-  <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
-  <script src="https://files.bpcontent.cloud/2025/07/14/05/20250714055513-H0VCMRCQ.js" defer></script>
+<div id="webchat" style="width: 500px; height: 500px; position: fixed !important; z-index: 99999;"></div>
+<script>
+  window.botpress.on("webchat:ready", () => {
+    window.botpress.open();
+  });
+  window.botpress.init({
+  "botId": "d655b1a8-30c1-459a-97fc-62d0bd909066",
+  "configuration": {
+    "version": "v1",
+    "botName": "Quickservice Support",
+    "botDescription": "",
+    "website": {},
+    "email": {},
+    "phone": {},
+    "termsOfService": {},
+    "privacyPolicy": {},
+    "color": "#6e00a6",
+    "variant": "solid",
+    "headerVariant": "glass",
+    "themeMode": "light",
+    "fontFamily": "inter",
+    "radius": 4,
+    "feedbackEnabled": true,
+    "footer": "&copy;2025 Quickservice",
+    "additionalStylesheetUrl": "https://files.bpcontent.cloud/2025/07/14/06/20250714060839-MAJ8S7TT.css"
+  },
+  "clientId": "0c4d0e41-7b63-4552-aa64-093143993889",
+  "selector": "#webchat"
+});
+</script>
 </body>
 </html>

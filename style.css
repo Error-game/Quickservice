@@ -13,9 +13,12 @@ body {
 }
 
 .container {
+  max-width: 800px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
   padding: 20px;
-  width: 100%;
-  max-width: 500px; /* caps width for big screens */
+  padding-bottom: 70px;
 }
 
 h1 {
@@ -82,4 +85,16 @@ hr {
   hr {
     width: 90%;
   }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3e0049 !important;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  z-index: 1000; /* stay on top */
 }
