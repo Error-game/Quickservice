@@ -7,37 +7,79 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* changed from height to min-height */
   text-align: center;
+  box-sizing: border-box;
 }
 
 .container {
   padding: 20px;
+  width: 100%;
+  max-width: 500px; /* caps width for big screens */
 }
 
 h1 {
-  font-family:'Times New Roman', Times, serif;
-  font-size: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
 hr {
   border: none;
   height: 2px;
-  width: 400px;
+  width: 80%; /* fluid width */
   background: white;
   margin: 0 auto 30px;
 }
 
+.widgets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* spacing between icons */
+  margin-bottom: 20px;
+}
+
 .widgets a {
-  margin: 0 50px;
   color: white;
   font-size: 2.7rem;
   transition: transform 0.7s ease;
-  display: inline-block;
 }
 
 .widgets a:hover {
   transform: translateY(-10px);
 }
 
+.business-hours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+/* 🌐 MOBILE FIXES */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .widgets a {
+    font-size: 2rem;
+  }
+
+  .business-hours {
+    font-size: 0.95rem;
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+  }
+
+  hr {
+    width: 90%;
+  }
+}
