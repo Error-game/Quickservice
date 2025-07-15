@@ -37,7 +37,7 @@
   &copy; 2025 Quickservice. All rights reserved.
 </footer>
   </div>
-<div id="webchat" style="width: 500px; height: 500px; position: fixed !important; z-index: 99999;"></div>
+<div id="webchat" style="width: 100px; height: 100px; bottom: 20px; right: 20px; position: fixed; z-index: 999999;"></div>
 <script>
   window.botpress.on("webchat:ready", () => {
     window.botpress.open();
@@ -47,7 +47,7 @@
   "configuration": {
     "version": "v1",
     "botName": "Quickservice Support",
-    "botDescription": "",
+    "botDescription": "This bot will help you with general information only",
     "website": {},
     "email": {},
     "phone": {},
@@ -69,3 +69,52 @@
 </script>
 </body>
 </html>
+<!--
+<script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
+<style>
+  #webchat .bpWebchat {
+    position: unset;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  #webchat .bpFab {
+    display: none;
+  }
+</style>
+
+
+<div id="webchat" style="width: 500px; height: 500px;"></div>
+
+
+<script>
+  window.botpress.on("webchat:ready", () => {
+    window.botpress.open();
+  });
+  window.botpress.init({
+  "botId": "d655b1a8-30c1-459a-97fc-62d0bd909066",
+  "configuration": {
+    "version": "v1",
+    "botName": "",
+    "botDescription": "",
+    "website": {},
+    "email": {},
+    "phone": {},
+    "termsOfService": {},
+    "privacyPolicy": {},
+    "color": "#9805e2",
+    "variant": "solid",
+    "headerVariant": "glass",
+    "themeMode": "light",
+    "fontFamily": "inter",
+    "radius": 4,
+    "feedbackEnabled": true,
+    "footer": "[⚡ by Botpress](https://botpress.com/?from=webchat)",
+    "additionalStylesheetUrl": "https://files.bpcontent.cloud/2025/07/14/06/20250714060839-MAJ8S7TT.css"
+  },
+  "clientId": "0c4d0e41-7b63-4552-aa64-093143993889",
+  "selector": "#webchat"
+});
+</script>
